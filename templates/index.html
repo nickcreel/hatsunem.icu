@@ -1,8 +1,16 @@
 <!doctype html>
 <title>hatsunem.icu</title>
-
+{% block header %}
+<head>
+    <img src ="{{img_src}}"></img>
+</head>
+{% endblock %}
 {% block body %}
 <div align = "center">
     <iframe width ="1280" height = "720" src="https://www.youtube.com/embed/{{ video_id }}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+<div id="contact" align="center">
+Contact: <a href="mailto:contact@hatsunem.icu">contact@hatsunem.icu</a> Playlist: <a href ="https://www.youtube.com/playlist?list=PL4b75VzKmiVO3Kt-0pbZ_kvpxKRKdmNZD">Youtube</a><br>
+<a href="https://en.wikipedia.org/wiki/Hatsune_Miku">who (or what) is hatsune miku?</a>
 </div>
 {% endblock %}

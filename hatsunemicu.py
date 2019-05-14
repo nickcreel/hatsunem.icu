@@ -2,11 +2,16 @@ from flask import Flask
 from flask import render_template
 from random import randint
 import googleapiclient.discovery
+from os import listdir
 
 app = Flask(__name__)
-
+    
 @app.route('/')
 
+def load_header():
+    filenames = listdir("./headers")
+    numfiles = len(filenames)
+    return render_template('index.html', imgsrc = str(filenames[randint(0, numfiles))])
 def random_vid_from_playlist():
 ###google api requirements
     api_service_name = "youtube"
