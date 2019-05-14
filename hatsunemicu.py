@@ -11,7 +11,7 @@ app = Flask(__name__)
 def load_header():
     filenames = listdir("./headers")
     numfiles = len(filenames)
-    return render_template('index.html', img_src = filenames[randint(0, numfiles)])
+    return render_template('index.html', img_src = filenames[randint(0, numfiles-1)])
 def random_vid_from_playlist():
 ###google api requirements
     api_service_name = "youtube"
@@ -36,7 +36,7 @@ def random_vid_from_playlist():
     for item in response['items']:
         video_ids.append(item['snippet']['resourceId']['videoId'])
     
-    random_vid_id = video_ids[randint(0, len(video_ids))]
+    random_vid_id = video_ids[randint(0, len(video_ids)-1)]
  ###
 
   # num_values = len(video_ids)
