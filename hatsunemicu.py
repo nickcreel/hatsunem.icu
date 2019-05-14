@@ -8,11 +8,6 @@ app = Flask(__name__)
     
 @app.route('/')
 
-def load_header():
-    filenames = listdir("./headers")
-    numfiles = len(filenames)
-    return render_template('index.html', img_src = filenames.pop())
-
 def random_vid_from_playlist():
 ###google api requirements
     api_service_name = "youtube"
