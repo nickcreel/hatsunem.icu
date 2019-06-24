@@ -12,7 +12,7 @@ def random_vid_from_playlist():
 ###google api requirements
     api_service_name = "youtube"
     api_version = "v3"
-    DEVELOPER_KEY = "AIzaSyC6xrU74ONYT7SiOOFf7z5mNLZVAGFpsL0"
+    DEVELOPER_KEY = #<insert developer key here>
     youtube = googleapiclient.discovery.build(api_service_name, api_version,
               developerKey = DEVELOPER_KEY)
 
