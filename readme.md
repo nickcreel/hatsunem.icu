@@ -15,4 +15,4 @@ Resources
 [Playlist on Youtube](https://www.youtube.com/playlist?list=PL4b75VzKmiVO3Kt-0pbZ_kvpxKRKdmNZD)
 
 --------------------------------------
-nick creel - may 2019 - MIT license - contact@hatsunem.icu
+marie creel - may 2019 - MIT license - contact@hatsunem.icu
